@@ -1,0 +1,14 @@
+{
+  "dataset_name": "PJ01 Indic Stance Classification Illustrative Demonstration Dataset",
+  "version": "1.0.0",
+  "created_for": "Milestone 1 Pipeline Demonstration",
+  "creation_date": "2026-10-14",
+  "data_provenance": "synthetic_demonstration_data",
+  "target_claim": "Climate change and global warming is a serious concern.",
+  "languages": ["hi", "bn"],
+  "classes": ["Favour", "Against", "None"],
+  "is_official_dataset": false,
+  "is_human_annotated": false,
+  "purpose": "This illustrative dataset is created solely for demonstrating end-to-end pipeline functionality, stratified splitting, feature extraction, evaluation metrics (Macro-F1), and live UI testing prior to the arrival of the official shared task / benchmark dataset.",
+  "warning": "Do NOT report performance on this synthetic dataset as real-world academic research findings or representative model accuracy on actual social media comments."
+}

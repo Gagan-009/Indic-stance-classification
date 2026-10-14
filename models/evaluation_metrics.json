@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "purpose": "Milestone 1 Pipeline Demonstration",
+    "is_synthetic_demonstration_data": true,
+    "data_path": "data/illustrative_dataset.csv",
+    "random_state": 42,
+    "test_size": 0.25,
+    "train_samples": 54,
+    "val_samples": 18,
+    "train_classes": {
+      "Against": 18,
+      "Favour": 18,
+      "None": 18
+    },
+    "val_classes": {
+      "Favour": 6,
+      "Against": 6,
+      "None": 6
+    }
+  },
+  "overall_validation_metrics": {
+    "macro_f1": 0.4333,
+    "micro_f1": 0.4444,
+    "accuracy": 0.4444,
+    "labels": [
+      "Favour",
+      "Against",
+      "None"
+    ],
+    "per_class": {
+      "Favour": {
+        "precision": 0.25,
+        "recall": 0.1667,
+        "f1-score": 0.2,
+        "support": 6
+      },
+      "Against": {
+        "precision": 0.4,
+        "recall": 0.6667,
+        "f1-score": 0.5,
+        "support": 6
+      },
+      "None": {
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1-score": 0.6,
+        "support": 6
+      }
+    },
+    "confusion_matrix": [
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "total_samples": 18
+  },
+  "language_validation_metrics": {
+    "hi": {
+      "macro_f1": 0.5667,
+      "micro_f1": 0.5556,
+      "accuracy": 0.5556,
+      "labels": [
+        "Favour",
+        "Against",
+        "None"
+      ],
+      "per_class": {
+        "Favour": {
+          "precision": 0.5,
+          "recall": 0.3333,
+          "f1-score": 0.4,
+          "support": 3
+        },
+        "Against": {
+          "precision": 0.4,
+          "recall": 0.6667,
+          "f1-score": 0.5,
+          "support": 3
+        },
+        "None": {
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1-score": 0.8,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "total_samples": 9
+    },
+    "bn": {
+      "macro_f1": 0.3,
+      "micro_f1": 0.3333,
+      "accuracy": 0.3333,
+      "labels": [
+        "Favour",
+        "Against",
+        "None"
+      ],
+      "per_class": {
+        "Favour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3
+        },
+        "Against": {
+          "precision": 0.4,
+          "recall": 0.6667,
+          "f1-score": 0.5,
+          "support": 3
+        },
+        "None": {
+          "precision": 0.5,
+          "recall": 0.3333,
+          "f1-score": 0.4,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "total_samples": 9
+    }
+  },
+  "validation_report": {
+    "filepath": "C:\\Users\\Ajay\\projects\\indistance\\data\\illustrative_dataset.csv",
+    "initial_rows": 72,
+    "empty_text_count": 0,
+    "invalid_label_count": 0,
+    "invalid_lang_count": 0,
+    "duplicate_id_count": 0,
+    "duplicate_text_count": 0,
+    "provenance_flags": [
+      "synthetic_demonstration_data"
+    ],
+    "class_distribution": {
+      "Favour": 24,
+      "Against": 24,
+      "None": 24
+    },
+    "language_distribution": {
+      "hi": 36,
+      "bn": 36
+    },
+    "passed": true,
+    "final_rows": 72
+  }
+}
