@@ -1,0 +1,57 @@
+{
+  "random_state": 21,
+  "target_test_size": 0.2,
+  "total_comments": 250,
+  "total_videos": 23,
+  "train_comments": 198,
+  "test_comments": 52,
+  "actual_train_ratio": 0.792,
+  "actual_test_ratio": 0.208,
+  "train_video_count": 18,
+  "test_video_count": 5,
+  "train_videos": [
+    "0R-n8NKtsGc",
+    "0UydzLKcFww",
+    "6KzBTJftX0s",
+    "BE3dPTCjt5U",
+    "BP2ovYbYFac",
+    "E0BF4nStVM4",
+    "Fu9J106rLgE",
+    "G3hPfIBSG_4",
+    "JSkCLLP8AWs",
+    "Q5iZ8mE17Qc",
+    "VxK8ETqGNfU",
+    "cWubLF2nbTI",
+    "lN53Yzjda-s",
+    "lcG8CdlxOkg",
+    "slzPKP5BjUE",
+    "tchrElKMiMM",
+    "vpuw7jPg2Lk",
+    "xhG_waA5PSQ"
+  ],
+  "test_videos": [
+    "BcSH8_EnqLI",
+    "EXP1XkAN528",
+    "MlbKTUkifLI",
+    "ZBpD-ocIi0g",
+    "nH6gFgTpnYU"
+  ],
+  "train_class_distribution": {
+    "None": 103,
+    "Favour": 75,
+    "Against": 20
+  },
+  "test_class_distribution": {
+    "None": 27,
+    "Favour": 19,
+    "Against": 6
+  },
+  "train_language_distribution": {
+    "hi": 104,
+    "bn": 94
+  },
+  "test_language_distribution": {
+    "bn": 31,
+    "hi": 21
+  }
+}

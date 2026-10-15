@@ -3,17 +3,30 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Environments
+# Environments & API Credentials
 .venv/
 env/
 venv/
 ENV/
+.env
+*.env
+
+# Scratch scripts & temporary local tools
+scratch/
+
+# Data protection (protects author display names & raw unmoderated social comments)
+data/raw/
+data/interim/
+data/processed/stance_dataset.csv
+data/processed/cleaned_stance_dataset.csv
+
+# Serialized model artifacts (reproducible via python -m src.train_real_baseline)
+models/real_*.joblib
+models/real_baseline_metrics.json
+models/real_baseline_test_predictions.csv
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
-
-# Model artifacts (optional to keep git lean)
-# models/*.joblib
 
 # OS generated files
 .DS_Store

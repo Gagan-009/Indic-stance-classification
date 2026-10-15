@@ -1,0 +1,58 @@
+{
+  "labels": [
+    "Favour",
+    "Against",
+    "None"
+  ],
+  "overall_confusion_matrix": [
+    [
+      9,
+      1,
+      9
+    ],
+    [
+      4,
+      1,
+      1
+    ],
+    [
+      8,
+      4,
+      15
+    ]
+  ],
+  "hindi_confusion_matrix": [
+    [
+      4,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      2,
+      3,
+      5
+    ]
+  ],
+  "bengali_confusion_matrix": [
+    [
+      5,
+      1,
+      7
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      6,
+      1,
+      10
+    ]
+  ]
+}

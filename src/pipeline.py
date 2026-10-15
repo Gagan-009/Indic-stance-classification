@@ -1,3 +1,4 @@
+from typing import Optional
 import sys
 from pathlib import Path
 
@@ -68,6 +69,52 @@ def build_stance_pipeline(
     pipeline = Pipeline(
         steps=[
             ("features", features),
+            ("classifier", classifier),
+        ]
+    )
+
+    return pipeline
+
+
+def build_word_tfidf_pipeline(
+    random_state: int = 42,
+    c_param: float = 1.0,
+    max_iter: int = 1000,
+    class_weight: Optional[str] = "balanced",
+) -> Pipeline:
+    """Construct a simple word-level TF-IDF and Logistic Regression Pipeline.
+
+    Architecture:
+    1. Feature Extractor:
+       - Word-level TF-IDF (unigrams): captures word occurrences in Indic text.
+    2. Classifier:
+       - Multinomial Logistic Regression.
+
+    Args:
+        random_state: Seed for reproducible solver optimization.
+        c_param: Inverse regularization parameter C for Logistic Regression.
+        max_iter: Maximum solver iterations (high for guaranteed convergence).
+        class_weight: Class weight strategy (e.g. 'balanced' or None).
+
+    Returns:
+        Unfitted scikit-learn Pipeline.
+    """
+    word_vectorizer = TfidfVectorizer(
+        analyzer="word",
+        ngram_range=(1, 1),
+        min_df=1,
+    )
+
+    classifier = LogisticRegression(
+        C=c_param,
+        max_iter=max_iter,
+        random_state=random_state,
+        class_weight=class_weight,
+    )
+
+    pipeline = Pipeline(
+        steps=[
+            ("tfidf", word_vectorizer),
             ("classifier", classifier),
         ]
     )
